@@ -3,16 +3,20 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 	width: 100%;
+	margin: 0 auto;
 }
 
 .portraits {
-	width: 100%;
-	max-width: 450px;
-	height: 600px;
+	min-width: 144px;
+	min-height: 186px;
+	margin: auto;
+	padding: 0;
 }
 
 .heart {
 	width: 96px;
 	height: 84px;
+	min-width: 32px;
+	min-height: 20px;
 	margin: auto 0;
 }

@@ -8,7 +8,7 @@ const App = () => {
 			{/* <section className="hero"></section> */}
 			<main>
 				<section>
-					<h1>Oh, Hi React</h1>
+					<h1>Quieres ser mi novia?</h1>
 				</section>
 				<Portraits />
 				<Recipes />
