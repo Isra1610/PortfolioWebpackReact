@@ -1,0 +1,187 @@
+.main-header {
+	backdrop-filter: blur(5px);
+	background-color: var(--just-black);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	top: 0px;
+	position: fixed;
+	z-index: 2;
+}
+
+.main-header--container {
+	width: 100%;
+}
+
+.main-header--container-items {
+	display: flex;
+	flex-direction: row;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	position: relative;
+	padding: 6px 2rem;
+}
+
+.containter-item--title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 3.3rem;
+	font-size: 3rem;
+}
+
+.containter-item--title .title__nick {
+	color: var(--aqua);
+	font-weight: bold;
+}
+
+.containter-item--title .title__nick2 {
+	color: var(--ligh-blue);
+	font-weight: bold;
+}
+
+.containter-item--info {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	line-height: 3.3rem;
+	font-size: 2rem;
+}
+
+.info {
+	padding: 6px 20px;
+	font-weight: 900;
+	text-decoration: none;
+	color: var(--aqua);
+}
+
+.info-list {
+	font-family: "Poppins", sans-serif !important;
+	list-style-type: none;
+	text-decoration: none;
+	text-align: center;
+	border-bottom: 2px solid var(--deep-blue);
+	font-size: 1.3rem;
+	color: var(--aqua);
+	font-weight: 900;
+	padding: 10px;
+}
+
+.info:hover,
+.info-list:hover {
+	background-color: var(--aqua);
+	color: var(--just-black);
+}
+
+.buttons-container {
+	place-content: center;
+	border: 0px;
+	background: 0px center;
+	cursor: pointer;
+	display: flex;
+	padding: 0.5rem 0.5rem 0.5rem 15px;
+	position: relative;
+}
+
+.buttons {
+	display: flex;
+}
+
+.idioms {
+	font-family: "Poppins", sans-serif !important;
+	list-style-type: none;
+	text-decoration: none;
+	border-bottom: 2px solid var(--deep-blue);
+	font-size: 1.3rem;
+	color: var(--aqua);
+	font-weight: 900;
+	padding: 10px;
+}
+
+.idioms:hover {
+	color: var(--deep-blue);
+	background-color: var(--aqua);
+}
+
+.idioms-logo {
+	height: 3rem;
+	width: 3rem;
+	margin-top: 6px;
+}
+
+.button-idioms-container--list {
+	background: var(--dark-blue);
+	border-top: 2px solid var(--aqua);
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	opacity: 0;
+	overflow: hidden;
+	top: 45px;
+	padding: 0;
+	transition: all 0.3s ease 0s;
+	width: 100px;
+	position: fixed;
+	z-index: 2;
+}
+
+.buttons-info--list {
+	background: var(--deep-blue);
+	border-top: 2px solid var(--aqua);
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	margin-top: -100%;
+	opacity: 0;
+	overflow: hidden;
+	top: 58px;
+	left: 60%;
+	padding: 0;
+	transition: all 0.3s ease 0s;
+	width: 150px;
+	position: fixed;
+	z-index: 2;
+}
+
+.buttons-container:hover .button-idioms-container--list {
+	opacity: 1;
+}
+
+.buttons-idioms-container {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+.button-idioms-container--list-mobile {
+	background: var(--deep-blue);
+	border-top: 2px solid var(--aqua);
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	margin-top: -100%;
+	opacity: 0;
+	overflow: hidden;
+	top: 58px;
+	right: 42px;
+	padding: 0;
+	transition: all 0.3s ease 0s;
+	width: 100px;
+	position: fixed;
+	z-index: 2;
+}
+
+.show {
+	opacity: 1;
+	margin: 0;
+}
+
+@media (min-width: 1024px) {
+	.buttons {
+		display: none;
+	}
+
+	.containter-item--info {
+		display: flex;
+	}
+}

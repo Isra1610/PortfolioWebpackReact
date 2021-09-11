@@ -1,0 +1,28 @@
+:root {
+	/* Colors */
+	--just-black: #000;
+	--ligh-blue: #2898ee;
+	--blue: #107acc;
+	--aqua: #0cbccc;
+	--deep-blue: #08385c;
+	--dark-blue: #107acc34;
+	--light-dark-blue: #107acc71;
+	--just-white: #fff;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+.main {
+	width: 100%;
+	background-color: var(--just-black);
+}

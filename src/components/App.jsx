@@ -1,19 +1,14 @@
-import "../styles/index.scss";
-import Recipes from "./Recipes";
-import Portraits from "./Portraits";
+import "../styles/App.css";
+import ButtonsHeadBar from "./ButtonsHeadBar";
+import Container from "./Container";
 
 const App = () => {
 	return (
-		<>
-			{/* <section className="hero"></section> */}
-			<main>
-				<section>
-					<h1>Quieres ser mi novia?</h1>
-				</section>
-				<Portraits />
-				<Recipes />
-			</main>
-		</>
+		<div className="main">
+			<ButtonsHeadBar />
+			<Container />
+			<script src="../Scripts/index.js"></script>
+		</div>
 	);
 };
 

@@ -1,0 +1,73 @@
+.container-responsive {
+	margin-top: 4.5em;
+}
+
+.container-mobile {
+	background-position: center top;
+	background-size: cover;
+	color: var(--aqua);
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	background-repeat: no-repeat;
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+	padding: 0 2rem;
+	position: relative;
+}
+
+.container-mobile::after {
+	position: absolute;
+	content: " ";
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #107acc34;
+	z-index: 0;
+	opacity: 0.8;
+}
+
+.container-mobile---home {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	max-width: 100%;
+	z-index: 1;
+	padding-bottom: 100px;
+}
+
+.first-span {
+	color: var(--aqua);
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.Typist .nick {
+	color: var(--aqua);
+	display: inline-flex;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.blinking-cursor {
+	opacity: 1;
+	animation: 1s linear 0s infinite;
+}
+
+.second-span {
+	color: var(--aqua);
+	font-size: 2rem;
+	font-weight: bold;
+	padding-bottom: 2rem;
+}
+
+.aboutme {
+	color: var(--aqua);
+	display: flex;
+	font-weight: 600;
+	max-width: 340px;
+	padding-top: 0px;
+	padding-right: 4rem;
+	font-size: 20px;
+}

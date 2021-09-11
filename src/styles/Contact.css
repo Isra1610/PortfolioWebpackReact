@@ -1,0 +1,106 @@
+.contact-container {
+	background-color: #107acc34;
+	position: relative;
+	min-height: 700px;
+}
+
+.contact-header {
+	display: flex;
+	justify-content: center;
+	padding: 3rem 0px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-header--title {
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: var(--aqua);
+}
+
+.contact-header--social {
+	display: flex;
+	height: 6rem;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.contact-fb {
+	height: 5rem;
+	width: 5rem;
+	border-radius: 50%;
+	background-size: 50%;
+	background-position: center center;
+	background-image: url(../icons/facebook.png);
+	background-repeat: no-repeat;
+}
+
+.contact-insta {
+	height: 5rem;
+	width: 5rem;
+	border-radius: 50%;
+	background-size: 50%;
+	background-position: center center;
+	background-image: url(../icons/instagram.png);
+	background-repeat: no-repeat;
+}
+
+.contact-linkedIn {
+	height: 5rem;
+	width: 5rem;
+	border-radius: 50%;
+	background-size: 50%;
+	background-position: center center;
+	background-image: url(../icons/linkedin.png);
+	background-repeat: no-repeat;
+}
+
+.contact-form {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-form--inputs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0px;
+	width: 80%;
+}
+
+.form-input {
+	border: none;
+	font-size: 1.5rem;
+	height: 35px;
+	color: var(--aqua);
+	margin-bottom: 20px;
+	padding: 6px 12px;
+	width: 80%;
+}
+
+.form-message {
+	border: none;
+	font-size: 1.8rem;
+	height: 200px;
+	color: var(--aqua);
+	margin-bottom: 20px;
+	padding: 6px 12px;
+	width: 80%;
+}
+
+.button-container {
+	margin-bottom: 100px;
+}
+
+.form-button {
+	background-color: var(--deep-blue);
+	color: var(--aqua);
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 2.5;
+	padding: 0px;
+	text-align: center;
+	width: 100px;
+	border: none;
+	font-weight: bold;
+}
