@@ -7,7 +7,6 @@ const App = () => {
 		<div className="main">
 			<ButtonsHeadBar />
 			<Container />
-			<script src="../Scripts/index.js"></script>
 		</div>
 	);
 };

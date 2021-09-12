@@ -22,24 +22,6 @@
 	padding: 6px 2rem;
 }
 
-.containter-item--title {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	line-height: 3.3rem;
-	font-size: 3rem;
-}
-
-.containter-item--title .title__nick {
-	color: var(--aqua);
-	font-weight: bold;
-}
-
-.containter-item--title .title__nick2 {
-	color: var(--ligh-blue);
-	font-weight: bold;
-}
-
 .containter-item--info {
 	display: none;
 	justify-content: center;
@@ -136,7 +118,7 @@
 	opacity: 0;
 	overflow: hidden;
 	top: 58px;
-	left: 60%;
+	right: 0;
 	padding: 0;
 	transition: all 0.3s ease 0s;
 	width: 150px;

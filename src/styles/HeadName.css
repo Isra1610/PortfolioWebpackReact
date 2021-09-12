@@ -1,0 +1,17 @@
+.containter-item--title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 3.3rem;
+	font-size: 3rem;
+}
+
+.containter-item--title .title__nick {
+	color: var(--aqua);
+	font-weight: bold;
+}
+
+.containter-item--title .title__nick2 {
+	color: var(--ligh-blue);
+	font-weight: bold;
+}

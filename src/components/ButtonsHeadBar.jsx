@@ -1,17 +1,16 @@
 import earthGlobe from "../icons/earth-globe-geography-svgrepo-com.svg";
 import hamburguerIcon from "../icons/hamburguer-svgrepo-com.svg";
-import "../styles/Buttons.css";
+import "../styles/ButtonsHeadBar.css";
+import HeadName from "./HeadName";
 
-const ButtonsHeadBar = () => {
+const ButtonsHeadBar = (props) => {
+	console.log(props);
 	return (
 		<>
 			<div className="main-header">
 				<div className="main-header--container">
 					<div className="main-header--container-items">
-						<div className="containter-item--title">
-							<span className="title__nick">Israel</span>
-							<span className="title__nick2">R</span>
-						</div>
+						<HeadName />
 						<div className="buttons">
 							<button className="buttons-idioms-container" id="buttonEarth">
 								<img src={earthGlobe} className="idioms-logo" alt="earth" />
