@@ -39,6 +39,11 @@
 	font-weight: bold;
 }
 
+.bandButton:hover {
+	background-color: var(--aqua);
+	color: var(--deep-blue);
+}
+
 .bandList {
 	margin: auto;
 	font-size: 1.3rem;
@@ -76,6 +81,11 @@
 		width: 150px;
 		border: none;
 		font-weight: bold;
+	}
+
+	.bandButton:hover {
+		background-color: var(--aqua);
+		color: var(--deep-blue);
 	}
 
 	.bandList {
