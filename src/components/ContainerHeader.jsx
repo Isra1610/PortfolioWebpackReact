@@ -18,7 +18,28 @@ const ContainerHeader = () => {
 					</div>
 				</div>
 			</div>
-			<div className="container-desktop"></div>
+			<div className="container-desktop">
+				<div className="header-after">
+					<div className="container-desktop---home">
+						<span className="first-span">
+							<div className="Typist nick">
+								Soy Israel 👋
+								<span className="blinking-cursor">|</span>
+							</div>
+						</span>
+						<span className="second-span">
+							Frontend
+							<br />
+							Developer
+						</span>
+						<div className="aboutme">
+							Ayudo a empresas y marcas a construir y mejorar su presencia
+							online a través del código.
+						</div>
+					</div>
+				</div>
+				<div className="header-theme"></div>
+			</div>
 		</div>
 	);
 };

@@ -1,9 +1,30 @@
+.influences-container {
+	position: relative;
+	padding-bottom: 1rem;
+}
+
+.influences-header {
+	display: flex;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	justify-content: center;
+	padding: 3rem 0 2rem 0;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
 .influences-body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	max-width: 1500px;
+	max-width: 1200px;
 	margin: auto;
+}
+
+.ifluences-header--span {
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: var(--aqua);
 }
 
 .influences-music--title,
@@ -13,6 +34,26 @@
 	justify-content: flex-start;
 	padding: 1rem 2rem;
 	align-items: left;
+}
+
+.music-icon {
+	width: 50px;
+	height: 50px;
+	margin-top: 2rem;
+}
+
+.gamerIcon,
+.musicIcon {
+	display: flex;
+	justify-content: left;
+	padding: 3rem 1.8rem 0.1rem;
+	align-items: center;
+}
+
+.gamer-icon {
+	width: 50px;
+	height: 50px;
+	justify-self: center;
 }
 
 .influences-music--title-span,
@@ -25,6 +66,7 @@
 .influences-videoGames--title-span p {
 	font-size: 1.4rem;
 	font-weight: 400;
+	padding: 0 0.7rem;
 }
 
 .influences-music--message {
@@ -38,7 +80,6 @@
 .influences-videoGames--message {
 	display: flex;
 	flex-direction: column;
-	text-align: right;
 	margin: 0 10px 20px 0;
 	padding: 1rem 2rem;
 }
@@ -134,4 +175,70 @@
 	color: var(--aqua);
 	font-size: 1.7rem;
 	font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+	.influences-body {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		overflow: auto;
+		width: 100%;
+		scroll-snap-type: x mandatory;
+		justify-content: center;
+	}
+
+	.incluences-music,
+	.influences-videoGames {
+		width: 50%;
+	}
+
+	.gamer-icon,
+	.music-icon {
+		width: 75px;
+		height: 75px;
+		margin: auto;
+	}
+
+	.influences-music--message {
+		text-align: left;
+	}
+
+	.influences-music--title,
+	.influences-music--title-span,
+	.influences-videoGames--title-span,
+	.influences-video-Games--title-span,
+	.influences-music-bands--title-span {
+		font-size: 2.3rem;
+	}
+
+	.ifluences-header--span {
+		font-size: 3rem;
+	}
+
+	.influences-nick {
+		text-align: center;
+	}
+
+	.influences-videoGames--title-span p {
+		margin-top: 23px !important;
+		font-size: 1.7rem !important;
+	}
+
+	.games {
+		font-size: 1.5rem;
+	}
+
+	.influences-music--message-span {
+		font-size: 1.8rem;
+	}
+
+	.img-container {
+		height: 30rem;
+		width: 100%;
+	}
+
+	.influences-music-card {
+		flex-direction: column;
+	}
 }

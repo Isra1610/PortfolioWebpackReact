@@ -1,5 +1,4 @@
-.container-skills,
-.influences-container {
+.container-skills {
 	position: relative;
 	padding-bottom: 1rem;
 }
@@ -14,18 +13,7 @@
 	align-items: center;
 }
 
-.influences-header {
-	display: flex;
-	flex-direction: column;
-	-webkit-box-pack: center;
-	justify-content: center;
-	padding: 3rem 0 2rem 0;
-	-webkit-box-align: center;
-	align-items: center;
-}
-
-.skills-span,
-.ifluences-header--span {
+.skills-span {
 	font-size: 2.4rem;
 	font-weight: bold;
 	color: var(--aqua);
@@ -35,25 +23,6 @@
 	width: 50px;
 	height: 50px;
 	margin-left: 1rem;
-}
-
-.music-icon {
-	width: 50px;
-	height: 50px;
-	margin-top: 2rem;
-}
-
-.gamerIcon {
-	display: flex;
-	justify-content: center;
-	padding: 3rem 0 2rem 0;
-	align-items: center;
-}
-
-.gamer-icon {
-	width: 50px;
-	height: 50px;
-	justify-self: center;
 }
 
 .card-front-developer,
@@ -145,4 +114,44 @@
 	padding: 10px 20px;
 	font-size: 13px;
 	text-align: center;
+}
+
+@media (min-width: 850px) {
+	.skills-cards {
+		display: flex;
+		flex-direction: row;
+		overflow: auto;
+		width: 100%;
+		scroll-snap-type: x mandatory;
+		-webkit-box-pack: center;
+		justify-content: center;
+	}
+
+	.card-front-developer,
+	.card-agile,
+	.card-backend {
+		display: flex;
+		flex-direction: column;
+		padding: 32px 20px;
+		width: 300px;
+	}
+
+	.card-name1,
+	.card-name2,
+	.card-name3 {
+		width: 100%;
+		border-radius: 6px 6px 0px 0px;
+	}
+
+	.card-info {
+		width: 100%;
+		border-radius: 0px 0px 6px 6px;
+	}
+
+	.card-row {
+		clip-path: polygon(50% 51%, 0px 0px, 100% 0px);
+		left: 45%;
+		top: 10.9rem;
+		width: 2rem;
+	}
 }

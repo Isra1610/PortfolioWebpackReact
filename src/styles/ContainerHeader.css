@@ -3,16 +3,16 @@
 }
 
 .container-mobile {
-	background-position: center top;
+	background-image: url(../images/portrait2.jpg);
+	background-position: right top;
 	background-size: cover;
-	color: var(--aqua);
 	display: flex;
 	flex-direction: column;
 	height: 500px;
 	background-repeat: no-repeat;
 	-webkit-box-pack: end;
 	justify-content: flex-end;
-	padding: 0 2rem;
+	padding: 0px 2rem;
 	position: relative;
 }
 
@@ -23,12 +23,13 @@
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	background-color: #107acc34;
+	background-color: #08385cd0;
 	z-index: 0;
 	opacity: 0.8;
 }
 
-.container-mobile---home {
+.container-mobile---home,
+.container-desktop---home {
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -60,6 +61,7 @@
 	font-size: 2rem;
 	font-weight: bold;
 	padding-bottom: 2rem;
+	line-height: 6rem;
 }
 
 .aboutme {
@@ -70,4 +72,101 @@
 	padding-top: 0px;
 	padding-right: 4rem;
 	font-size: 20px;
+	line-height: 2.7rem;
+}
+
+@media (min-width: 1024px) {
+	.container-mobile---home {
+		max-width: 400px;
+	}
+
+	.first-span {
+		font-size: 5rem;
+	}
+
+	.Typist .nick {
+		font-size: 5rem;
+	}
+
+	.second-span {
+		font-size: 5rem;
+	}
+
+	.aboutme {
+		padding-top: 0;
+		max-width: 350px;
+	}
+}
+
+@media (min-width: 770px) {
+	.container-mobile---home {
+		max-width: 350px;
+	}
+}
+
+@media (min-width: 1500px) {
+	.container-responsive {
+		border-radius: 10px;
+		overflow: hidden;
+		max-width: 1500px;
+		margin: 15px auto 48px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container-desktop---home {
+		display: none;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container-responsive {
+		padding: 0 1.6rem;
+	}
+
+	.container-mobile {
+		display: none;
+	}
+
+	.container-desktop {
+		border-radius: 10px;
+		background-image: url(../images/portrait2.jpg);
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		height: 700px;
+		display: flex;
+		margin-top: 57px;
+	}
+
+	.header-after {
+		background-color: var(--deep-blue);
+		border-radius: 10px 0px 0px 10px;
+		clip-path: polygon(0px 0px, 99% 0%, 50% 100%, 0% 100%);
+		display: flex;
+		flex-direction: column;
+		height: 86%;
+		-webkit-box-pack: start;
+		justify-content: flex-start;
+		opacity: 0.95;
+		position: absolute;
+		right: 39.5%;
+		top: 0px;
+		width: 56%;
+		-webkit-box-align: unset;
+		align-items: unset;
+		padding-top: 100px;
+		padding-left: 70px;
+	}
+
+	.header-theme {
+		background-color: var(--aqua);
+		position: absolute;
+		right: -0.26%;
+		top: 0px;
+		height: 100%;
+		opacity: 0.7;
+		width: 100%;
+		clip-path: polygon(40% 66%, 30% 100%, 50% 100%);
+	}
 }

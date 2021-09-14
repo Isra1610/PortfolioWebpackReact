@@ -12,15 +12,15 @@ const Influences = () => {
 				</div>
 				<div className="influences-body">
 					<div className="incluences-music">
+						<div className="musicIcon">
+							<img src={dj} alt="programer" className="music-icon" />
+						</div>
 						<div className="influences-music--title">
-							<div className="musicIcon">
-								<img src={dj} alt="programer" className="music-icon" />
-							</div>
 							<span className="influences-music--title-span">
-								<b>
-									Música:
+								<div className="influences-nick">
+									Música
 									<br />
-								</b>
+								</div>
 								<p>
 									"Thank God for Punk Rock"
 									<br />
@@ -30,13 +30,8 @@ const Influences = () => {
 						</div>
 						<div className="influences-music--message">
 							<span className="influences-music--message-span">
-								Empezar a escuchar música
-								<br />
-								en ingles a temprana edad me
-								<br />
-								influencio a aprender el idioma y<br />
-								con ello entender mejor los
-								<br />
+								Empezar a escuchar música en ingles a temprana edad me
+								influencio a aprender el idioma y con ello entender mejor los
 								lenguajes de programación.
 							</span>
 						</div>
@@ -48,8 +43,15 @@ const Influences = () => {
 						<div className="influences-music-card">
 							<div className="img-container"></div>
 							<div className="bands">
-								Blink 182 - Sum 41 - The Ataris - Green Day - Avril Lavigne -
-								MCR - The Offpring - Simple Plan - Breaking Benjamin
+								<ul>
+									<li>Blink 182</li>
+									<li>Sum 41</li>
+									<li>The Ataris</li>
+									<li>Green Day</li>
+									<li>Limp Bizkit</li>
+									<li>The Offpring</li>
+									<li>Linkin Park</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -59,16 +61,15 @@ const Influences = () => {
 						</div>
 						<div className="influences-videoGames--title">
 							<span className="influences-videoGames--title-span">
-								Video Juegos:
+								<div className="influences-nick">
+									Video Juegos
+									<br />
+								</div>
 								<p>
 									Mi atracción a los computadores y a programar empezo desde
-									pequeño... obtuve mi primera consola de video
-									<br />a los 5 años y mi primer computador a los 9 años, odiaba
-									madrugar
-									<br />
-									al colegio pero nunca odié madrugar los fines de semana para
-									jugar
-									<br />
+									pequeño... obtuve mi primera consola de video a los 5 años y
+									mi primer computador a los 9 años, odiaba madrugar al colegio
+									pero nunca odié madrugar los fines de semana para jugar{" "}
 									<b>Age of Empires I</b>.
 								</p>
 							</span>

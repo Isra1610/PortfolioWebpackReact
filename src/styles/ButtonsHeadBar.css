@@ -73,7 +73,7 @@
 	font-family: "Poppins", sans-serif !important;
 	list-style-type: none;
 	text-decoration: none;
-	border-bottom: 2px solid var(--deep-blue);
+	border-bottom: 2px solid var(--dark-blue);
 	font-size: 1.3rem;
 	color: var(--aqua);
 	font-weight: 900;
@@ -92,7 +92,7 @@
 }
 
 .button-idioms-container--list {
-	background: var(--dark-blue);
+	background: var(--deep-blue);
 	border-top: 2px solid var(--aqua);
 	text-decoration: none;
 	text-align: center;
