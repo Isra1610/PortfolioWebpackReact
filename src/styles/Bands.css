@@ -1,0 +1,93 @@
+.influences-music-card {
+	display: flex;
+	flex-direction: column;
+}
+
+.img-container {
+	margin: 0 auto 2rem;
+}
+
+.bands {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	align-items: center;
+	color: var(--aqua);
+	font-size: 1.5rem;
+	width: 100%;
+}
+
+.bandsGeneres {
+	display: flex;
+	flex-direction: column;
+}
+
+.bandButton {
+	margin: 2rem 1rem 0 2rem;
+	background-color: var(--deep-blue);
+	color: var(--aqua);
+	cursor: pointer;
+	font-size: 1.4rem;
+	line-height: 2.5;
+	padding: 5px;
+	text-align: center;
+	width: 140px;
+	border: none;
+	font-weight: bold;
+}
+
+.bandList {
+	margin: auto;
+	font-size: 1.3rem;
+}
+
+@media (min-width: 1024px) {
+	.bands {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: bold;
+		align-items: center;
+		color: var(--aqua);
+		font-size: 1.5rem;
+		width: 100%;
+	}
+
+	.bandsGeneres {
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+	}
+
+	.bandButton {
+		margin: 2rem 0;
+		background-color: var(--deep-blue);
+		color: var(--aqua);
+		cursor: pointer;
+		font-size: 1.5rem;
+		line-height: 2.5;
+		padding: 5px;
+		text-align: center;
+		width: 150px;
+		border: none;
+		font-weight: bold;
+	}
+
+	.bandList {
+		font-size: 1.4rem;
+		margin: auto;
+	}
+
+	ul {
+		text-align: left;
+	}
+
+	ul li {
+		margin-top: 0.8rem;
+	}
+}

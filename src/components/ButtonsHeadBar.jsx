@@ -1,10 +1,40 @@
 import earthGlobe from "../icons/earth-globe-geography-svgrepo-com.svg";
 import hamburguerIcon from "../icons/hamburguer-svgrepo-com.svg";
-import "../styles/ButtonsHeadBar.css";
 import HeadName from "./HeadName";
 
-const ButtonsHeadBar = (props) => {
-	console.log(props);
+import "../styles/ButtonsHeadBar.css";
+
+let buttonsHamburguer = document.getElementById("#buttonsHamburguer");
+let buttonsEarth = document.getElementById("#buttonsEarth");
+
+console.log(buttonsHamburguer);
+console.log(buttonsEarth);
+
+let hamburguerFlag = "";
+let earthFlag = "";
+
+const ButtonsHeadBar = () => {
+	const buttonHamburguer = () => {
+		hamburguerFlag = 1;
+		earthFlag = 0;
+		if (hamburguerFlag > 0 && earthFlag < 1) {
+			buttonsHamburguer.classList.toggle("show");
+			if (buttonsHamburguer.classList.contains("show")) {
+				buttonsEarth.classList.remove("show");
+			}
+		}
+	};
+	const buttonEarth = () => {
+		earthFlag = 1;
+		hamburguerFlag = 0;
+		if (earthFlag > 0 && hamburguerFlag < 1) {
+			buttonsEarth.classList.toggle("show");
+			if (buttonsEarth.classList.contains("show")) {
+				buttonsHamburguer.classList.remove("show");
+			}
+		}
+	};
+
 	return (
 		<>
 			<div className="main-header">
@@ -12,7 +42,11 @@ const ButtonsHeadBar = (props) => {
 					<div className="main-header--container-items">
 						<HeadName />
 						<div className="buttons">
-							<button className="buttons-idioms-container" id="buttonEarth">
+							<button
+								className="buttons-idioms-container"
+								id="buttonEarth"
+								onClick={() => buttonEarth()}
+							>
 								<img src={earthGlobe} className="idioms-logo" alt="earth" />
 								<ul
 									className="button-idioms-container--list-mobile"
@@ -26,7 +60,11 @@ const ButtonsHeadBar = (props) => {
 									</a>
 								</ul>
 							</button>
-							<button className="buttons-container" id="buttonHamburguer">
+							<button
+								className="buttons-container"
+								id="buttonHamburguer"
+								onClick={() => buttonHamburguer()}
+							>
 								<img
 									src={hamburguerIcon}
 									className="idioms-logo"

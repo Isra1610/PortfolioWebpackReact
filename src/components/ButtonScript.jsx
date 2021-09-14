@@ -26,5 +26,3 @@ buttonEarth.addEventListener("click", () => {
 		}
 	}
 });
-
-export default ButtonScript;

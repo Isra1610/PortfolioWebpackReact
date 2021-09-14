@@ -1,7 +1,10 @@
 import dj from "../icons/dj.png";
 import gamer from "../icons/gamer.png";
+import GameCard1 from "./GameCard1";
+import GameCard2 from "./GameCard2";
 
 import "../styles/Influences.css";
+import Bands from "./Bands";
 
 const Influences = () => {
 	return (
@@ -42,17 +45,7 @@ const Influences = () => {
 						</div>
 						<div className="influences-music-card">
 							<div className="img-container"></div>
-							<div className="bands">
-								<ul>
-									<li>Blink 182</li>
-									<li>Sum 41</li>
-									<li>The Ataris</li>
-									<li>Green Day</li>
-									<li>Limp Bizkit</li>
-									<li>The Offpring</li>
-									<li>Linkin Park</li>
-								</ul>
-							</div>
+							<Bands />
 						</div>
 					</div>
 					<div className="influences-videoGames">
@@ -85,43 +78,32 @@ const Influences = () => {
 								formas de pensar.
 							</span>
 						</div>
-						<div className="influences-videoGames-card">
-							<div className="img-container2"></div>
-							<div className="games">
-								"Ya no hay noticias, solo propaganda."
-								<br />
-								<br />
-								-Mirror's Edge.
-							</div>
-						</div>
-						<div className="influences-videoGames-card2">
-							<div className="games">
-								"Hay cosas que olvidamos... Y hay cosas que no podemos olvidar,
-								es gracioso, no sé cual es mas triste."
-								<br />
-								<br />
-								-Silent Hill 3.
-							</div>
-							<div className="img-container3"></div>
-						</div>
-						<div className="influences-videoGames-card">
-							<div className="img-container4"></div>
-							<div className="games">
-								"La gente tarda poco en juzgar, pero mucho en corregirse."
-								<br />
-								<br />
-								-Assassin's Creed 2.
-							</div>
-						</div>
-						<div className="influences-videoGames-card2">
-							<div className="games">
-								"Que alguien se haya ido no significa que te haya dejado."
-								<br />
-								<br />
-								-Star Fox 64.
-							</div>
-							<div className="img-container5"></div>
-						</div>
+						<GameCard1
+							card={"img-container2"}
+							message={'"Ya no hay noticias, solo propaganda."'}
+							game={"-Mirror's Edge."}
+						/>
+						<GameCard2
+							message={
+								'"Hay cosas que olvidamos... Y hay cosas que no podemos olvidar, es gracioso, no sé cual es mas triste."'
+							}
+							game={"-Silent Hill 3."}
+							card={"img-container3"}
+						/>
+						<GameCard1
+							card={"img-container4"}
+							message={
+								'"La gente tarda poco en juzgar, pero mucho en corregirse."'
+							}
+							game={"-Assassin's Creed 2."}
+						/>
+						<GameCard2
+							message={
+								'"Que alguien se haya ido no significa que te haya dejado."'
+							}
+							game={"-Star Fox 64."}
+							card={"img-container5"}
+						/>
 					</div>
 				</div>
 			</div>

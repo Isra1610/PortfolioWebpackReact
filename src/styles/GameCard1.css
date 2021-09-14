@@ -1,0 +1,36 @@
+.img-container2 {
+	display: flex;
+	height: 11.6rem;
+	width: 55%;
+	background-image: url("../images/Mirror's_Edge.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.img-container4 {
+	display: flex;
+	height: 11.6rem;
+	width: 55%;
+	background-image: url("../images/assasins_creed_2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.games {
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	font-weight: bold;
+	align-items: center;
+	height: 11.6rem;
+	width: 45%;
+	color: var(--aqua);
+}
+
+.influences-videoGames-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 2rem 1rem 2rem 0;
+	padding: 1rem 2rem 1rem 0;
+}
