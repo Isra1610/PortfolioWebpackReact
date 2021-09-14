@@ -70,7 +70,7 @@
 	}
 
 	.bandButton {
-		margin: 2rem 0;
+		margin: 2.2rem 0;
 		background-color: var(--deep-blue);
 		color: var(--aqua);
 		cursor: pointer;
@@ -89,7 +89,7 @@
 	}
 
 	.bandList {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 		margin: auto;
 	}
 
