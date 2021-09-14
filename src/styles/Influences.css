@@ -209,7 +209,15 @@
 	.influences-videoGames--title-span,
 	.influences-video-Games--title-span,
 	.influences-music-bands--title-span {
-		font-size: 2.3rem;
+		font-size: 2rem;
+	}
+
+	.influences-music--title-span p {
+		text-align: center;
+	}
+
+	.influences-videoGames--message-span {
+		text-align: center;
 	}
 
 	.ifluences-header--span {
@@ -222,15 +230,15 @@
 
 	.influences-videoGames--title-span p {
 		margin-top: 23px !important;
-		font-size: 1.7rem !important;
+		font-size: 1.6rem !important;
 	}
 
 	.games {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 	}
 
 	.influences-music--message-span {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 
 	.img-container {
@@ -240,5 +248,17 @@
 
 	.influences-music-card {
 		flex-direction: column;
+	}
+
+	.bands {
+		margin: 8rem auto;
+		font-size: 1.6rem;
+	}
+
+	.img-container2,
+	.img-container3,
+	.img-container4,
+	.img-container5 {
+		height: 17rem;
 	}
 }
