@@ -23,7 +23,7 @@ const Skills = () => {
 							</div>
 							<div className="card-info">
 								<div className="card-info--skils" id="hola">
-									Js - React - Redux - Css - SASS - HTML5
+									JavaScript - React - Redux - Css - SASS - HTML5
 								</div>
 							</div>
 						</div>
@@ -36,7 +36,7 @@ const Skills = () => {
 								</div>
 							</div>
 							<div className="card-info">
-								<div className="card-info--skils">Git - Jira</div>
+								<div className="card-info--skils">Git</div>
 							</div>
 						</div>
 						<div className="card-backend">
@@ -48,7 +48,9 @@ const Skills = () => {
 								</div>
 							</div>
 							<div className="card-info">
-								<div className="card-info--skils">PHP - NodeJs</div>
+								<div className="card-info--skils">
+									PHP - NodeJs - Java/Springboot
+								</div>
 							</div>
 						</div>
 					</div>
