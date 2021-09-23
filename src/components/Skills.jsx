@@ -49,7 +49,7 @@ const Skills = () => {
 							</div>
 							<div className="card-info">
 								<div className="card-info--skils">
-									PHP - NodeJs - Java/Springboot
+									PHP - NodeJs - Java/Springboot - SQL
 								</div>
 							</div>
 						</div>
