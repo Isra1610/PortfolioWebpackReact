@@ -108,24 +108,6 @@
 	z-index: 2;
 }
 
-.buttons-info--list {
-	background: var(--deep-blue);
-	border-top: 2px solid var(--aqua);
-	text-decoration: none;
-	display: flex;
-	flex-direction: column;
-	margin-top: -100%;
-	opacity: 0;
-	overflow: hidden;
-	top: 58px;
-	right: 0;
-	padding: 0;
-	transition: all 0.3s ease 0s;
-	width: 150px;
-	position: fixed;
-	z-index: 2;
-}
-
 .buttons-container:hover .button-idioms-container--list {
 	opacity: 1;
 }
@@ -153,10 +135,38 @@
 	z-index: 2;
 }
 
-.show {
+.buttons-info--list {
+	background: var(--deep-blue);
+	border-top: 2px solid var(--aqua);
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	margin-top: -100%;
+	opacity: 0;
+	overflow: hidden;
+	top: 58px;
+	right: 0;
+	padding: 0;
+	transition: all 0.3s ease 0s;
+	width: 150px;
+	position: fixed;
+	z-index: 2;
+}
+
+.buttons-idioms-container:hover > .button-idioms-container--list-mobile {
 	opacity: 1;
 	margin: 0;
 }
+
+.buttons-container:hover > .buttons-info--list {
+	opacity: 1;
+	margin: 0;
+}
+
+/* .show {
+	opacity: 1;
+	margin: 0;
+} */
 
 @media (min-width: 1024px) {
 	.buttons {
