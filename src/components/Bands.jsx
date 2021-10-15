@@ -31,7 +31,7 @@ const metal = {
 };
 
 const Bands = () => {
-	const [band, setBand] = useState({punkRock});
+	const [band, setBand] = useState(punkRock);
 	return (
 		<div className="bands">
 			<div className="bandsGeneres">
